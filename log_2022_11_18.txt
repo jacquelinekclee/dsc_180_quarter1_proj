@@ -1,0 +1,8 @@
+23:53:18,744 root INFO extract file paths
+23:53:33,425 root INFO extract file paths
+23:54:03,590 root INFO extract file paths
+23:54:03,590 root INFO process all data
+23:57:07,694 root INFO extract file paths
+23:57:07,694 root INFO process all data
+23:57:39,96 root INFO extract file paths
+23:57:39,96 root INFO process all data

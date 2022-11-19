@@ -1,0 +1,31 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --biallelic-only
+  --maf 0.05
+  --make-bed
+  --out data/temp/chr22_plink_output
+  --vcf test/testdata/chr22.first100rows.vcf.gz
+
+Hostname: dsmlp-jupyter-jkl001
+Working directory: /home/jkl001/private/dsc180_proj1
+Start time: Sat Nov 19 00:30:52 2022
+
+Random number seed: 1668817852
+386416 MB RAM detected; reserving 193208 MB for main workspace.
+--vcf: data/temp/chr22_plink_output-temporary.bed +
+data/temp/chr22_plink_output-temporary.bim +
+data/temp/chr22_plink_output-temporary.fam written.
+70 variants loaded from .bim file.
+1092 people (0 males, 0 females, 1092 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to data/temp/chr22_plink_output.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1092 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+37 variants removed due to minor allele threshold(s)
+(--maf/--max-maf/--mac/--max-mac).
+33 variants and 1092 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to data/temp/chr22_plink_output.bed +
+data/temp/chr22_plink_output.bim + data/temp/chr22_plink_output.fam ... done.
+
+End time: Sat Nov 19 00:30:53 2022

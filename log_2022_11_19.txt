@@ -1,0 +1,831 @@
+00:29:57,192 root INFO extract file paths
+00:29:57,192 root INFO process all data
+00:29:57,280 root INFO Loading fam file data/temp/chr22_plink_output.fam
+00:29:57,388 root INFO run linear regressions
+00:29:57,390 root INFO start analysis for all
+00:29:57,395 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,399 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,401 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,403 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,404 root INFO const    0.821823
+x1      -0.123743
+dtype: float64
+00:29:57,406 root INFO const    0.816486
+x1      -0.049864
+dtype: float64
+00:29:57,408 root INFO const    0.821823
+x1      -0.123743
+dtype: float64
+00:29:57,410 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,412 root INFO const    0.816486
+x1      -0.049864
+dtype: float64
+00:29:57,413 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,415 root INFO const    0.793814
+x1       0.002295
+dtype: float64
+00:29:57,417 root INFO const    0.845399
+x1      -0.091934
+dtype: float64
+00:29:57,418 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,420 root INFO const    0.845399
+x1      -0.091934
+dtype: float64
+00:29:57,422 root INFO const    0.833778
+x1      -0.088771
+dtype: float64
+00:29:57,423 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,425 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,427 root INFO const    0.793814
+x1       0.002295
+dtype: float64
+00:29:57,428 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,430 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,432 root INFO const    0.795203
+x1      -0.007908
+dtype: float64
+00:29:57,433 root INFO const    0.638120
+x1       0.140583
+dtype: float64
+00:29:57,435 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,436 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,438 root INFO const    0.757255
+x1       0.111206
+dtype: float64
+00:29:57,440 root INFO const    0.821823
+x1      -0.123743
+dtype: float64
+00:29:57,442 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,443 root INFO const    0.833778
+x1      -0.088771
+dtype: float64
+00:29:57,445 root INFO const    0.661530
+x1       0.091934
+dtype: float64
+00:29:57,446 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,448 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,450 root INFO const    0.793814
+x1       0.002295
+dtype: float64
+00:29:57,452 root INFO const    0.794324
+x1       0.000000
+dtype: float64
+00:29:57,456 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,458 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,460 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,462 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,464 root INFO const    0.234579
+x1      -0.005688
+dtype: float64
+00:29:57,466 root INFO const    0.234614
+x1      -0.002921
+dtype: float64
+00:29:57,468 root INFO const    0.234579
+x1      -0.005688
+dtype: float64
+00:29:57,469 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,472 root INFO const    0.234614
+x1      -0.002921
+dtype: float64
+00:29:57,473 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,476 root INFO const    0.200305
+x1       0.148545
+dtype: float64
+00:29:57,478 root INFO const    0.193092
+x1       0.072402
+dtype: float64
+00:29:57,479 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,481 root INFO const    0.193092
+x1       0.072402
+dtype: float64
+00:29:57,483 root INFO const    0.257845
+x1      -0.055191
+dtype: float64
+00:29:57,484 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,486 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,488 root INFO const    0.200305
+x1       0.148545
+dtype: float64
+00:29:57,489 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,491 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,492 root INFO const    0.197873
+x1       0.318982
+dtype: float64
+00:29:57,494 root INFO const    0.281317
+x1      -0.043201
+dtype: float64
+00:29:57,495 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,497 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,499 root INFO const    0.184744
+x1       0.145715
+dtype: float64
+00:29:57,500 root INFO const    0.234579
+x1      -0.005688
+dtype: float64
+00:29:57,502 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,503 root INFO const    0.257845
+x1      -0.055191
+dtype: float64
+00:29:57,505 root INFO const    0.337896
+x1      -0.072402
+dtype: float64
+00:29:57,507 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,508 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,510 root INFO const    0.200305
+x1       0.148545
+dtype: float64
+00:29:57,511 root INFO const    0.233315
+x1       0.000000
+dtype: float64
+00:29:57,515 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,517 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,518 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,520 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,522 root INFO const    0.055963
+x1      -0.041828
+dtype: float64
+00:29:57,523 root INFO const    0.066106
+x1      -0.043735
+dtype: float64
+00:29:57,525 root INFO const    0.055963
+x1      -0.041828
+dtype: float64
+00:29:57,528 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,530 root INFO const    0.066106
+x1      -0.043735
+dtype: float64
+00:29:57,531 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,533 root INFO const    0.034279
+x1       0.055752
+dtype: float64
+00:29:57,535 root INFO const    0.020783
+x1       0.046592
+dtype: float64
+00:29:57,536 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,538 root INFO const    0.020783
+x1       0.046592
+dtype: float64
+00:29:57,540 root INFO const    0.033433
+x1       0.029779
+dtype: float64
+00:29:57,541 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,543 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,544 root INFO const    0.034279
+x1       0.055752
+dtype: float64
+00:29:57,546 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,547 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,549 root INFO const    0.041997
+x1       0.042034
+dtype: float64
+00:29:57,551 root INFO const    0.015711
+x1       0.027861
+dtype: float64
+00:29:57,552 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,554 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,555 root INFO const    0.046430
+x1       0.000714
+dtype: float64
+00:29:57,557 root INFO const    0.055963
+x1      -0.041828
+dtype: float64
+00:29:57,559 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,561 root INFO const    0.033433
+x1       0.029779
+dtype: float64
+00:29:57,563 root INFO const    0.113968
+x1      -0.046592
+dtype: float64
+00:29:57,565 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,567 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,569 root INFO const    0.034279
+x1       0.055752
+dtype: float64
+00:29:57,571 root INFO const    0.046668
+x1       0.000000
+dtype: float64
+00:29:57,575 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,577 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,578 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,580 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,582 root INFO const    8.035679
+x1       0.678590
+dtype: float64
+00:29:57,584 root INFO const    7.833707
+x1       0.793730
+dtype: float64
+00:29:57,586 root INFO const    8.035679
+x1       0.678590
+dtype: float64
+00:29:57,587 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,589 root INFO const    7.833707
+x1       0.793730
+dtype: float64
+00:29:57,591 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,593 root INFO const    8.322856
+x1      -0.613710
+dtype: float64
+00:29:57,595 root INFO const    8.606700
+x1      -0.756403
+dtype: float64
+00:29:57,597 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,598 root INFO const    8.606700
+x1      -0.756403
+dtype: float64
+00:29:57,600 root INFO const    8.394842
+x1      -0.468823
+dtype: float64
+00:29:57,602 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,604 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,605 root INFO const    8.322856
+x1      -0.613710
+dtype: float64
+00:29:57,607 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,609 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,610 root INFO const    8.266360
+x1      -0.718952
+dtype: float64
+00:29:57,612 root INFO const    8.314269
+x1      -0.115013
+dtype: float64
+00:29:57,613 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,615 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,616 root INFO const    8.136564
+x1       0.149737
+dtype: float64
+00:29:57,618 root INFO const    8.035679
+x1       0.678590
+dtype: float64
+00:29:57,619 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,621 root INFO const    8.394842
+x1      -0.468823
+dtype: float64
+00:29:57,623 root INFO const    7.093894
+x1       0.756403
+dtype: float64
+00:29:57,624 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,626 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,628 root INFO const    8.322856
+x1      -0.613710
+dtype: float64
+00:29:57,630 root INFO const    8.186476
+x1       0.000000
+dtype: float64
+00:29:57,633 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,635 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,637 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,639 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,640 root INFO const    133.450557
+x1       -26.545479
+dtype: float64
+00:29:57,642 root INFO const    145.884591
+x1       -41.249314
+dtype: float64
+00:29:57,644 root INFO const    133.450557
+x1       -26.545479
+dtype: float64
+00:29:57,645 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,647 root INFO const    145.884591
+x1       -41.249314
+dtype: float64
+00:29:57,649 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,650 root INFO const    124.526702
+x1        13.611870
+dtype: float64
+00:29:57,652 root INFO const    105.059307
+x1        40.486059
+dtype: float64
+00:29:57,653 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,655 root INFO const    105.059307
+x1        40.486059
+dtype: float64
+00:29:57,656 root INFO const    113.491867
+x1        31.634314
+dtype: float64
+00:29:57,658 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,660 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,661 root INFO const    124.526702
+x1        13.611870
+dtype: float64
+00:29:57,663 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,665 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,667 root INFO const    125.092744
+x1        22.129363
+dtype: float64
+00:29:57,668 root INFO const    115.765805
+x1        10.607181
+dtype: float64
+00:29:57,670 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,672 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,674 root INFO const    137.569779
+x1       -30.054650
+dtype: float64
+00:29:57,676 root INFO const    133.450557
+x1       -26.545479
+dtype: float64
+00:29:57,678 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,680 root INFO const    113.491867
+x1        31.634314
+dtype: float64
+00:29:57,682 root INFO const    186.031425
+x1       -40.486059
+dtype: float64
+00:29:57,684 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,685 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,687 root INFO const    124.526702
+x1        13.611870
+dtype: float64
+00:29:57,688 root INFO const    127.551562
+x1         0.000000
+dtype: float64
+00:29:57,691 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,693 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,695 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,696 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,698 root INFO const    7.456661
+x1      -0.195609
+dtype: float64
+00:29:57,699 root INFO const    7.421477
+x1      -0.018641
+dtype: float64
+00:29:57,701 root INFO const    7.456661
+x1      -0.195609
+dtype: float64
+00:29:57,702 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,704 root INFO const    7.421477
+x1      -0.018641
+dtype: float64
+00:29:57,705 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,707 root INFO const    7.424838
+x1      -0.052405
+dtype: float64
+00:29:57,708 root INFO const    7.487049
+x1      -0.132941
+dtype: float64
+00:29:57,710 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,711 root INFO const    7.487049
+x1      -0.132941
+dtype: float64
+00:29:57,713 root INFO const    7.366009
+x1       0.106163
+dtype: float64
+00:29:57,715 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,716 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,718 root INFO const    7.424838
+x1      -0.052405
+dtype: float64
+00:29:57,720 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,721 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,723 root INFO const    7.479610
+x1      -0.597759
+dtype: float64
+00:29:57,724 root INFO const    6.964728
+x1       0.403618
+dtype: float64
+00:29:57,726 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,728 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,730 root INFO const    7.398950
+x1       0.042727
+dtype: float64
+00:29:57,731 root INFO const    7.456661
+x1      -0.195609
+dtype: float64
+00:29:57,733 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,735 root INFO const    7.366009
+x1       0.106163
+dtype: float64
+00:29:57,737 root INFO const    7.221167
+x1       0.132941
+dtype: float64
+00:29:57,738 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,740 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,742 root INFO const    7.424838
+x1      -0.052405
+dtype: float64
+00:29:57,743 root INFO const    7.413193
+x1       0.000000
+dtype: float64
+00:29:57,747 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,748 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,750 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,752 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,753 root INFO const    0.219504
+x1       0.055911
+dtype: float64
+00:29:57,755 root INFO const    0.211703
+x1       0.045507
+dtype: float64
+00:29:57,756 root INFO const    0.219504
+x1       0.055911
+dtype: float64
+00:29:57,758 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,759 root INFO const    0.211703
+x1       0.045507
+dtype: float64
+00:29:57,761 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,762 root INFO const    0.215357
+x1       0.074572
+dtype: float64
+00:29:57,764 root INFO const    0.266680
+x1      -0.062552
+dtype: float64
+00:29:57,766 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,768 root INFO const    0.266680
+x1      -0.062552
+dtype: float64
+00:29:57,770 root INFO const    0.250905
+x1      -0.042696
+dtype: float64
+00:29:57,771 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,773 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,775 root INFO const    0.215357
+x1       0.074572
+dtype: float64
+00:29:57,777 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,779 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,780 root INFO const    0.237444
+x1      -0.049640
+dtype: float64
+00:29:57,782 root INFO const    0.156939
+x1       0.067490
+dtype: float64
+00:29:57,784 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,785 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,787 root INFO const    0.240392
+x1      -0.025389
+dtype: float64
+00:29:57,788 root INFO const    0.219504
+x1       0.055911
+dtype: float64
+00:29:57,790 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,791 root INFO const    0.250905
+x1      -0.042696
+dtype: float64
+00:29:57,793 root INFO const    0.141576
+x1       0.062552
+dtype: float64
+00:29:57,794 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,796 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,797 root INFO const    0.215357
+x1       0.074572
+dtype: float64
+00:29:57,799 root INFO const    0.231929
+x1       0.000000
+dtype: float64
+00:29:57,802 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,803 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,804 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,806 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,807 root INFO const    0.067572
+x1       0.006135
+dtype: float64
+00:29:57,809 root INFO const    0.060875
+x1       0.018137
+dtype: float64
+00:29:57,810 root INFO const    0.067572
+x1       0.006135
+dtype: float64
+00:29:57,812 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,813 root INFO const    0.060875
+x1       0.018137
+dtype: float64
+00:29:57,815 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,817 root INFO const    0.071505
+x1      -0.011563
+dtype: float64
+00:29:57,818 root INFO const    0.081035
+x1      -0.021779
+dtype: float64
+00:29:57,820 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,821 root INFO const    0.081035
+x1      -0.021779
+dtype: float64
+00:29:57,823 root INFO const    0.074484
+x1      -0.012483
+dtype: float64
+00:29:57,824 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,826 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,828 root INFO const    0.071505
+x1      -0.011563
+dtype: float64
+00:29:57,829 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,831 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,832 root INFO const    0.071518
+x1      -0.023240
+dtype: float64
+00:29:57,834 root INFO const    0.05548
+x1       0.01211
+dtype: float64
+00:29:57,835 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,837 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,839 root INFO const    0.063251
+x1       0.017053
+dtype: float64
+00:29:57,840 root INFO const    0.067572
+x1       0.006135
+dtype: float64
+00:29:57,842 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,843 root INFO const    0.074484
+x1      -0.012483
+dtype: float64
+00:29:57,845 root INFO const    0.037478
+x1       0.021779
+dtype: float64
+00:29:57,847 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,848 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,850 root INFO const    0.071505
+x1      -0.011563
+dtype: float64
+00:29:57,852 root INFO const    0.068936
+x1       0.000000
+dtype: float64
+00:29:57,870 root INFO finished analysis for all
+00:29:57,871 root INFO start analysis for CEU
+00:29:57,901 root INFO finished analysis for CEU
+00:29:57,901 root INFO start analysis for FIN
+00:29:57,903 root INFO const    0.574336
+x1       0.000000
+dtype: float64
+00:29:57,906 root INFO const    0.574336
+x1       0.000000
+dtype: float64
+00:29:57,907 root INFO const    0.574336
+x1       0.000000
+dtype: float64
+00:29:57,909 root INFO const    0.574336
+x1       0.000000
+dtype: float64
+00:29:57,911 root INFO const    0.287168
+dtype: float64
+00:30:52,950 root INFO extract file paths
+00:30:52,950 root INFO process all data
+00:30:53,67 root INFO Loading fam file data/temp/chr22_plink_output.fam
+00:30:53,161 root INFO run linear regressions
+00:30:53,163 root INFO start analysis for all
+00:30:53,464 root INFO finished analysis for all
+00:30:53,464 root INFO start analysis for CEU
+00:30:53,510 root INFO finished analysis for CEU
+00:30:53,510 root INFO start analysis for FIN
+00:30:53,875 root INFO finished analysis for FIN
+00:30:53,875 root INFO start analysis for GBR
+00:30:54,239 root INFO finished analysis for GBR
+00:30:54,239 root INFO start analysis for TSI
+00:30:54,267 root INFO finished analysis for TSI
+00:30:54,267 root INFO start analysis for YRI
+00:30:54,294 root INFO finished analysis for YRI

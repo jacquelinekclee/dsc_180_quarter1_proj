@@ -1,6 +1,0 @@
-{
-  "gene_expression_fp": "test/testdata/GD462.test.data.5rows.txt",
-  "genotype_fps": ["test/testdata/chr22.first100rows.vcf.gz"],
-  "plink_output_fps": ["data/temp/chr22_plink_output"],
-  "population_mapping_fp": "test/testdata/population_mapping_samp.txt"
-}

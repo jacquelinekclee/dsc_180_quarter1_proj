@@ -4,6 +4,13 @@
         "genotype_fps": ["test/testdata/chr22.first100rows.vcf.gz"],
         "plink_output_fps": ["data/temp/chr22_plink_output"],
         "population_mapping_fp": "test/testdata/population_mapping_samp.txt"
-    }   
+    },
+    
+    "all" :{
+        "gene_expression_fp": "data/raw/GD462.GeneQuantRPKM.50FN.samplename.resk10.txt",
+        "genotype_fps": ["data/raw/ALL.chr22.phase1_release_v3.20101123.snps_indels_svs.genotypes.vcf.gz"],
+        "plink_output_fps": ["data/temp/chr22_plink_output_all"],
+        "population_mapping_fp": "data/raw/ALL_1000G_phase1integrated_v3.sample"
+    }
     
 }

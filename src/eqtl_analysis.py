@@ -21,6 +21,8 @@ def run_all_linear_regressions(data_dict):
         else:
             total_num_tests_all += num_tests
             
+    final_results['total_num_tests_all'] = total_num_tests_all
+    final_results['total_num_tests_pops'] = total_num_tests_pops
     # perform analysis for each population        
     
     for key, val in data_dict.items():
@@ -29,6 +31,8 @@ def run_all_linear_regressions(data_dict):
             total_num_tests = total_num_tests_all
         else:
             total_num_tests = total_num_tests_pops
+            
+        logging.info('total number of tests for {}: {}'.format(key, str(total_num_tests)))
         final_gene_expr_df = val[0]
         genotype_df = val[1]
         final_gene_expr_df['results'] = final_gene_expr_df.apply(lambda row: linear_regressions_upd(row, genotype_df, total_num_tests), axis = 1)

@@ -62,15 +62,12 @@ def get_population_sample_mapping(population_mapping_fp):
     
 def process_gene_expression_data(gene_expression_fp):
     gene_expr = pd.read_csv(gene_expression_fp, sep="\t", low_memory = False)
-    gene_expr.columns = gene_expr.loc[0]
-    gene_expr = gene_expr.drop([0])
+    if 0 in gene_expr.columns:
+        gene_expr.columns = gene_expr.loc[0]
+        gene_expr = gene_expr.drop([0])
     gene_expr.Coord = gene_expr.Coord.astype(int)
     gene_expr['Coord_min'] = gene_expr.Coord - 500000
     gene_expr['Coord_max'] = gene_expr.Coord + 500000
-    
-    print(gene_expr.columns[:10])
-    print(gene_expr.columns[-2:])
-    
     reorder_cols = list(gene_expr.columns[:4]) + list(gene_expr.columns[-2:]) + list(gene_expr.columns[4:-2])
     gene_expr = gene_expr[reorder_cols]
     return gene_expr
@@ -111,6 +108,8 @@ def create_one_genotype_df(output_files, gene_expr_samps):
     samples_df = pd.DataFrame(data = {samples[i]:vals[i] for i in range(len(samples))})
     genotype_df = pd.concat([df, samples_df], axis=1)
     cols = ['Chr', 'ref_snp', 'pos', 'ref_allele', 'alt_allele']
+    # keep only biallelic
+    genotype_df = genotype_df.loc[(genotype_df.ref_allele.str.len() == 1) & (genotype_df.alt_allele.str.len() == 1)].copy()
     return genotype_df.loc[genotype_df.ref_snp != '.'][cols + list(gene_expr_samps)].set_index('ref_snp')
 
 def nearby_snps(row, genotype_df):

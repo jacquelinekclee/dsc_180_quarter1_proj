@@ -33,7 +33,7 @@ def main(targets):
         with open('config/data-params.json') as fh:
             file_paths = json.load(fh)['test']
             logging.info('starting test process')
-    elif 'all' in targets:
+    elif 'data' in targets:
         with open('config/data-params.json') as fh:
             file_paths = json.load(fh)['all']
             logging.info('starting all process')

@@ -44,7 +44,7 @@ def main(targets):
     logging.info('run linear regressions')
     final_results_fps = run_all_linear_regressions(data_dict)
     if 'test' in targets:
-	return final_results_fps
+        return final_results_fps
     total_num_tests_all = final_results_fps['total_num_tests_all']
     total_num_tests_pops = final_results_fps['total_num_tests_pops']
     final_results_fps = {k:v for k, v in final_results_fps.items() if k not in ['total_num_tests_all', 'total_num_tests_pops']}

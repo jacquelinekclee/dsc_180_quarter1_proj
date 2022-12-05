@@ -8,8 +8,11 @@
 
 After completing the above, you should have the following files:
 
+```
 ├── data             
     ├── raw           
     │   └── GD462.GeneQuantRPKM.50FN.samplename.resk10.txt
     │   └── ALL.chr22.phase1_release_v3.20101123.snps_indels_svs.genotypes.vcf.gz
     │   └── ALL_1000G_phase1integrated_v3.sample
+  
+```

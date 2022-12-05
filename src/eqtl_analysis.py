@@ -6,7 +6,7 @@ import logging
 import numpy as np
 
 def run_all_linear_regressions(data_dict):
-    final_results = {}
+    final_results_fps = {}
     
     total_num_tests_pops = 0
     total_num_tests_all = 0
@@ -20,9 +20,8 @@ def run_all_linear_regressions(data_dict):
             total_num_tests_pops += num_tests
         else:
             total_num_tests_all += num_tests
-            
-    final_results['total_num_tests_all'] = total_num_tests_all
-    final_results['total_num_tests_pops'] = total_num_tests_pops
+    final_results_fps['total_num_tests_all'] = total_num_tests_all
+    final_results_fps['total_num_tests_pops'] = total_num_tests_pops
     # perform analysis for each population        
     
     for key, val in data_dict.items():
@@ -40,10 +39,10 @@ def run_all_linear_regressions(data_dict):
         # key = population
         fp = 'data/out/{}_eqtl_analysis_results_chr22_{}.csv'.format(date, key)
         final_results.to_csv(fp)
-        final_results[key] = fp
+        final_results_fps[key] = fp
         logging.info('finished analysis for {}'.format(key))
-        
-    return final_results
+    print(final_results_fps.keys())
+    return final_results_fps
     
 def linear_regressions_upd(row, genotype_df, total_num_tests):
     snps = row['snps']

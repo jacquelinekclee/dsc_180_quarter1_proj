@@ -41,7 +41,6 @@ def run_all_linear_regressions(data_dict):
         final_results.to_csv(fp)
         final_results_fps[key] = fp
         logging.info('finished analysis for {}'.format(key))
-    print(final_results_fps.keys())
     return final_results_fps
     
 def linear_regressions_upd(row, genotype_df, total_num_tests):

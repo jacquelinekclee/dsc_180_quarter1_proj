@@ -32,6 +32,7 @@ def generate_all_results_viz(fp, genotype_df, gene_expr, total_num_tests_all):
     return {'bar chart file path':bar_chart, 'box plot file path':box_plot}
     
 def generate_population_results_viz(fps, total_num_tests_pops):
+    final_results_fps = {}
     pop_results = {pop:pd.read_csv(fp) for pop, fp in fps.items()}
     for pop in pop_results:
         df = pop_results[pop]
@@ -50,44 +51,69 @@ def generate_population_results_viz(fps, total_num_tests_pops):
         pop_results[pop] = df.copy()
     ren = [df.rename(columns = {'Unnamed: 0': 'ref_snp'}, inplace = True) for df in pop_results.values()]
     sig_results = {pop:val.loc[val.is_sig] for pop,val in pop_results.items()}
-    counts = generate_population_counts(sig_results, pop_results)
-    # viz 3: bar plot for number of cis-eQTLs for each population
-    bar_chart = population_results_bar_chart(sig_results)
-    # viz 4: stacked bar plot for number of genes that found x number of sig cis-eQTLs
-    stacked_bar_chart = population_results_stacked_bar_chart(counts)
-    merged = generate_population_merged(sig_results)
-    all_overlap = population_all_overlap(merged)
-    eu_overlap = population_eu_overlap(sig_results)
-    results_df_dict = {'Metric':['Shared Across All Populations', 'Shared Across European Populations'],
-                      'Number of Significant SNP-Gene Pairs':[all_overlap, eu_overlap]}
-    # table for overlap summary
-    results_df = pd.DataFrame(data = results_df_dict)
-    results_df_fp = 'results/overlap_results_summary.csv'
-    results_df.to_csv(results_df_fp, index = False)
-    # table for overlap counts
-    overlap_matrix = population_overlap_matrix(sig_results)
-    overlap_matrix_fp = 'results/population_overlap_matrix.csv'
-    overlap_matrix.to_csv(overlap_matrix_fp, index_label = 'population')
-    # viz 5: dot plot
-    samp_for_dot_plot = merged.sample().iloc[0]
-    dot_plot = dot_plot_ci(samp_for_dot_plot.ref_snp, samp_for_dot_plot.gene, merged)
-    # viz 5a: dot plot for unique YRI
-    yri_pairs_filt = generate_yri_pairs(sig_results)
-    samp = random.sample(yri_pairs_filt, 1)[0].split('; ')
-    ref = samp[0]
-    g = samp[1]
-    yri_dot_plot = dot_plot_ci_yri(ref, g, pop_results)
-    highest_overlap_pop1 = overlap_matrix.max().idxmax()
-    highest_overlap_pop2 = overlap_matrix.loc[highest_overlap_pop1].idxmax()
-    # viz 6: scatter plot
-    pop_scatter_plot = two_populations_scatter_plot(merged, highest_overlap_pop1, highest_overlap_pop2)
-    final_results_fps = {'population bar chart file path':bar_chart,
-                         'population stacked bar chart file path':stacked_bar_chart,
-                         'overlap results summary table file path':results_df_fp,
-                         'population overlap matrix file path':overlap_matrix_fp,
-                         'dot plot for e-QTL across all populations file path':dot_plot,
-                         'dot plot for e-QTL exclusive to YRI population file path':yri_dot_plot,
-                         'scatter plot comparing 2 populations effect sizes':pop_scatter_plot}
+    try:
+        counts = generate_population_counts(sig_results, pop_results)
+    except:
+        pass
+    try:
+        # viz 3: bar plot for number of cis-eQTLs for each population
+        bar_chart = population_results_bar_chart(sig_results)
+        final_results_fps['population bar chart file path'] = bar_chart
+    except:
+        pass
+    try:
+        # viz 4: stacked bar plot for number of genes that found x number of sig cis-eQTLs
+        stacked_bar_chart = population_results_stacked_bar_chart(counts)
+        final_results_fps['population stacked bar chart file path'] = stacked_bar_chart
+                         
+    except:
+        pass
+    try:
+        merged = generate_population_merged(sig_results)
+        all_overlap = population_all_overlap(merged)
+        eu_overlap = population_eu_overlap(sig_results)
+        results_df_dict = {'Metric':['Shared Across All Populations', 'Shared Across European Populations'],
+                          'Number of Significant SNP-Gene Pairs':[all_overlap, eu_overlap]}
+        # table for overlap summary
+        results_df = pd.DataFrame(data = results_df_dict)
+        results_df_fp = 'results/overlap_results_summary.csv'
+        results_df.to_csv(results_df_fp, index = False)
+        # table for overlap counts
+        overlap_matrix = population_overlap_matrix(sig_results)
+        overlap_matrix_fp = 'results/population_overlap_matrix.csv'
+        overlap_matrix.to_csv(overlap_matrix_fp, index_label = 'population')
+        final_results_fps['overlap results summary table file path'] = results_df_fp
+        final_results_fps['population overlap matrix file path'] = overlap_matrix_fp
+                         
+    except:
+        pass
+    try:
+        # viz 5: dot plot
+        samp_for_dot_plot = merged.sample().iloc[0]
+        dot_plot = dot_plot_ci(samp_for_dot_plot.ref_snp, samp_for_dot_plot.gene, merged)
+        final_results_fps['dot plot for e-QTL across all populations file path'] = dot_plot,
+                         
+    except:
+        pass
+    try:
+        # viz 5a: dot plot for unique YRI
+        yri_pairs_filt = generate_yri_pairs(sig_results)
+        samp = random.sample(yri_pairs_filt, 1)[0].split('; ')
+        ref = samp[0]
+        g = samp[1]
+        yri_dot_plot = dot_plot_ci_yri(ref, g, pop_results)
+        final_results_fps['dot plot for e-QTL exclusive to YRI population file path'] = yri_dot_plot
+                         
+    except:
+        pass
+    try:
+        # viz 6: scatter plot
+        highest_overlap_pop1 = overlap_matrix.max().idxmax()
+        highest_overlap_pop2 = overlap_matrix.loc[highest_overlap_pop1].idxmax()
+        pop_scatter_plot = two_populations_scatter_plot(merged, highest_overlap_pop1, highest_overlap_pop2)
+        final_results_fps['scatter plot comparing 2 populations effect sizes'] = pop_scatter_plot
+    except:
+        pass
     return final_results_fps
     
 def merged_results(results, genotype_df):
@@ -97,6 +123,7 @@ def merged_results(results, genotype_df):
     return results_merged
     
 def all_results_bar_chart(full_results_merged_filt_sig):
+    fig, ax = plt.subplots()
     x = full_results_merged_filt_sig.groupby('gene')['ref_snp'].count().value_counts().sort_index().index[:25]
     y = full_results_merged_filt_sig.groupby('gene')['ref_snp'].count().value_counts().sort_index().values[:25]
     plt.bar(x, y, edgecolor = 'black')
@@ -109,6 +136,7 @@ def all_results_bar_chart(full_results_merged_filt_sig):
     return fp
     
 def all_results_most_sig_boxplot(full_results_merged_filt, genotype_df, gene_expr):
+    fig, ax = plt.subplots()
     most_sig = full_results_merged_filt.sort_values("pvalue").iloc[0]
     ref_snp_vals = genotype_df.loc[genotype_df.ref_snp == most_sig.ref_snp].melt(list(genotype_df.columns[:5]), var_name='sample_id', value_name='Value')
     gene_expr_vals = gene_expr.loc[gene_expr.Gene_Symbol == most_sig.gene].melt(list(gene_expr.columns[:7]), var_name='sample_id', value_name='gene_expression')
@@ -134,6 +162,7 @@ def all_results_most_sig_boxplot(full_results_merged_filt, genotype_df, gene_exp
     return fp
     
 def population_results_bar_chart(sig_results):
+    fig, ax = plt.subplots()
     pd.Series({pop:sig_results[pop].shape[0] for pop in sig_results}).plot(kind = 'bar', color = colors[:5], edgecolor = 'black')
     plt.xlabel('Population')
     plt.ylabel('# Significant SNPs')
@@ -168,6 +197,7 @@ def generate_population_counts(sig_results, pop_results):
     return counts
 
 def population_results_stacked_bar_chart(counts):
+    fig, ax = plt.subplots()
     counts_dfs = []
     for pop in counts:
         counts_df = pd.DataFrame({'num_genes':counts[pop].iloc[1:16].values, 'num_sig_snps':counts[pop].iloc[1:16].index})

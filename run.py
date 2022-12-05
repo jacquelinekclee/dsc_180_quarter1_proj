@@ -35,7 +35,7 @@ def main(targets):
             logging.info('starting test process')
     elif 'data' in targets:
         with open('config/data-params.json') as fh:
-            file_paths = json.load(fh)['all']
+            file_paths = json.load(fh)['data']
             logging.info('starting all process')
     logging.info('extract file paths')
     gene_expression_fp, genotype_fps, plink_output_fps, population_mapping_fp = file_paths.values()

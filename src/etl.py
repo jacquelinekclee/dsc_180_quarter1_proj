@@ -62,7 +62,7 @@ def get_population_sample_mapping(population_mapping_fp):
     
 def process_gene_expression_data(gene_expression_fp):
     gene_expr = pd.read_csv(gene_expression_fp, sep="\t", low_memory = False)
-    if 0 in gene_expr.columns:
+    if 0 in gene_expr.columns or '0' in gene_expr.columns:
         gene_expr.columns = gene_expr.loc[0]
         gene_expr = gene_expr.drop([0])
     gene_expr.Coord = gene_expr.Coord.astype(int)
